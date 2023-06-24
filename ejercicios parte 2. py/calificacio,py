@@ -1,0 +1,28 @@
+'''El sistema de calificación americano (de Estados Unidos) se suele calcular de
+acuerdo al siguiente cuadro: (Utilizando esta información, escribir un algoritmo que
+acepte una calificación numérica del estudiante (0-100), convierta esta calificación a
+su equivalente en letra y visualice la calificación correspondiente en letra)
+Grado numérico Grado en letra
+Grado mayor o igual a 90    A
+Menor de 90 pero mayor o igual a 80  B
+Menor de 80 pero mayor o igual a 70  C
+Menor de 70 pero mayor o igual a 69  D
+Menor de 69        F'''
+
+x = int(input("Introduzca la calificacion: "))
+
+while x > 0 and x <= 100:
+    if x >= 90:
+        print("su calificacion es A")
+    elif x >= 80 and x < 90:
+        print("su calificacion es B")
+    elif x >= 70 and x < 80:
+        print("su calificacion es C")
+    elif x >= 69 and x < 70:
+        print("su calificacion es D")
+    elif x < 69:
+        print("su calificacion es F")
+    break
+else: 
+    print("Calificacion es incorrecta!!!!")
+    
